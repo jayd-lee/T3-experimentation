@@ -1,7 +1,7 @@
 ## T3 stack experimental Todo app
 
 ### Backend
-- [] Update Prisma schema
+- [x] Update Prisma schema
 - [] Add Email auth provider
 - [] Create TRPC router for Todos
 
