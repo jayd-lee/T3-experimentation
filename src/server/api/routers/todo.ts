@@ -42,6 +42,17 @@ export const todoRouter = createTRPCRouter({
         }
       }
     })
-  }) 
+  }),
+
+  delete: protectedProcedure
+  .input(z.string())
+  .mutation(async ({ ctx, input }) => {
+    return ctx.db.todo.delete({
+      where: {
+        id: input,
+      }
+    })
+  }),
+  
 
 })
