@@ -31,5 +31,17 @@ export const todoRouter = createTRPCRouter({
   ]
   }),
 
+  create: protectedProcedure.input(todoInput).mutation(async ({ ctx, input }) => {
+    return ctx.db.todo.create({
+      data: {
+        text: input,
+        user: {
+          connect: {
+            id: ctx.session.user.id
+          }
+        }
+      }
+    })
+  }) 
 
 })
