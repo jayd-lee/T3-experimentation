@@ -3,7 +3,7 @@
 ### Backend
 - [x] Update Prisma schema
 - [x] Add Email auth provider
-- [] Create TRPC router for Todos
+- [x] Create TRPC router for Todos
 
 ### Frontend
 - [] Login
