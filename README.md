@@ -7,7 +7,7 @@
 
 ### Frontend
 - [x] Login
-- [] List Todos
+- [x] List Todos
 - [] Create Todos
 - [] Toggle Todo
 - [] Delete Todo
